@@ -14,3 +14,4 @@ describe('isNotEmpty', () => {
     expect(isNotEmpty('   ')).toBe(false);
   });
 });
+
