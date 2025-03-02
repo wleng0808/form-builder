@@ -6,6 +6,8 @@ vi.mock('tailwind-merge', () => ({
   twMerge: vi.fn((input) => input),
 }));
 
+
+
 describe('cn', () => {
   it('should merge class names correctly', () => {
     const result = cn('bg-red-500', 'text-white');
@@ -28,3 +30,4 @@ describe('cn', () => {
     expect(twMerge).toHaveBeenCalledWith(classes.join(' '));
   });
 });
+
